@@ -18,7 +18,6 @@ Each file is self-contained — just run `main()` to see all operations in actio
 | `HashSetDS.java` | HashSet, TreeSet, LinkedHashSet | Unique values |
 | `TreeDS.java` | Binary Tree + BST | Hierarchical structure |
 | `GraphDS.java` | Graph (BFS + DFS) | Nodes and edges |
-| `RecursionDS.java` | Recursion | Function calling itself |
 
 ---
 
@@ -38,7 +37,6 @@ Each file is self-contained — just run `main()` to see all operations in actio
 | Keys/values in sorted order | `TreeMap` / `TreeSet` |
 | Hierarchical data, searching | `BST (TreeDS)` |
 | Network, paths, connections | `Graph` |
-| Break a problem into smaller versions | `Recursion` |
 
 ---
 
@@ -151,12 +149,6 @@ Each file is self-contained — just run `main()` to see all operations in actio
 - Graphs can have **cycles** — that's why we need the `visited[]` array (trees don't need this)
 - **Undirected** edge: add both directions. **Directed** edge: add one direction only
 - **Adjacency list** for sparse graphs. **Adjacency matrix** for dense graphs or O(1) edge checks
-
-### Recursion
-- Every recursive function **must** have a base case — missing it causes `StackOverflowError`
-- Each recursive call must move **closer** to the base case
-- Trace small inputs by hand (n=0, n=1, n=2) before trusting your code
-- Recursion uses the **call stack** — very deep recursion can crash. Convert to iteration for large inputs
 
 ---
 
